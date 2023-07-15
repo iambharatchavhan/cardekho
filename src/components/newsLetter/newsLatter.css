@@ -1,0 +1,94 @@
+
+#newsLatter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+.getDemo,.newsLatterDiv{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding: 1.5rem;
+   background-color: var(--lightSee);
+   width: 35%;
+   min-height: 240px;  
+}
+.btnCallback{
+    padding: 1rem 3rem;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: var(--navy);
+    color: #fff;
+}
+.getDemo h2 ,.newsLatterDiv h2{
+  font-weight: 500;
+  font-size: 1.8rem;
+   
+}
+.newsLatterDiv h4{
+    font-weight: 500;
+    margin-top: -1.2rem;
+    width: 90%;
+}
+.newsLatterDiv{
+    background-color: var(--seeBlue);
+
+}
+.btnSubscribe{
+    border: none;
+    background: var(--navy);
+    padding: 1rem 2.6rem;
+    color: var(--lightSee);
+    font-size: 1rem;
+}
+.emailInput{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email{
+    padding: 1.1rem 3rem;
+    border: none;
+    outline: none;
+}
+.email::placeholder{
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+
+    #newsLatter{
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+
+    }
+    .getDemo{
+        margin: 0;
+        width: 100%;
+     
+    }
+    .getDemo,.newsLatterDiv{
+        padding: 0;
+        width: 100%;
+     
+     }
+
+    
+    .email{
+        padding: 1rem 1rem;
+        margin: 1rem 0;
+    }
+    .btnSubscribe{
+        border: none;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+  }

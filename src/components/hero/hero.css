@@ -1,0 +1,62 @@
+#heroSection {
+  background-color: var(--liteGray);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+.heroText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+.heroText div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroText h1 {
+  font-size: 2.5rem;
+  width: 60%;
+}
+.heroText p {
+  font-weight: 500;
+  font-size: 1.2rem;
+  width: 60%;
+}
+
+.heroImage img {
+  width: 100%;
+}
+
+/* Media Query for screens with a maximum width of 768px (tablets and smaller) */
+@media (max-width: 768px) {
+  #heroSection {
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+  .heroText h1 {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .heroText p {
+    width: 100%;
+
+    text-align: justify;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 320px) {
+  #heroSection {
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+}
+

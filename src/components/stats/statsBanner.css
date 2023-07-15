@@ -1,0 +1,17 @@
+
+.box{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.boxIcon{
+    font-weight: 400;
+    font-size:2rem;
+    margin-bottom: -1rem;
+}
+.boxValue{
+    font-size: 1.3rem;
+    font-weight:600;
+    margin-bottom: -1rem;
+}

@@ -1,0 +1,93 @@
+.container{
+    overflow: hidden;
+    padding: 2rem;
+    background: var(--liteGray);
+}
+.carouselHeading{
+    text-align: center;
+}
+.carouselHeading h2{
+    font-weight: 500;
+    margin-bottom: -1rem;
+}
+.carouselHeading h4{
+    font-weight: 500;
+}
+.cImage{
+   min-width: 33%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+
+}
+
+.cImage img{
+    width: 400px;
+    height:300px;
+
+}
+.parent{
+    display: flex;
+    width: 100%;
+    gap: 6rem;
+    transition: all 1s ease-in-out;
+ 
+
+   
+}
+.controls{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 2rem;
+}
+.btnBrows{
+    padding: 1.2rem 3rem;
+    border: none;
+    background: var(--orange);
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnCircle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid var(--orange);
+    color:var(--orange);
+    font-size: 2.2rem;
+    cursor: pointer;
+    background: none;
+    margin-left: 1rem;
+}
+@media screen and (max-width: 600px) {
+    .container{
+       padding: 0;
+    }
+    .cImage{
+        min-width: 33%;
+         height: 200px;
+     }
+     .parent{
+        gap:.5rem;
+    }
+    .controls{
+        justify-content:center;
+        padding:1rem;
+    }
+    .btnBrows{
+         padding: 1rem;
+         font-size: .9rem;
+    }
+    .btnCircle{
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    .nextPrev{
+        display: flex;
+    }
+}
